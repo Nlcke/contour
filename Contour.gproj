@@ -1,0 +1,10 @@
+<project>
+ <properties osx_category="5" fps="60" touchToMouse="1" windowWidth="0" winrt_package="com.yourdomain.yourapp" winrt_org="GiderosMobile" scaleMode="0" iosDevice="0" android_template="0" packageName="com.yourdomain.yourapp" osx_bundle="com.yourdomain." html5_mem="256" mouseTouchOrder="0" osx_domain="giderosmobile.com" app_icon="" mouseToTouch="1" ios_bundle="com.yourdomain." win_domain="giderosmobile.com" app_icon_noexport="0" architecture="0" windowHeight="0" orientation="0" logicalWidth="320" win_org="GiderosMobile" version="1.0" assetsOnly="0" encryptCode="0" encryptAssets="0" osx_org="GiderosMobile" retinaDisplay="0" html5_host="" version_code="1" logicalHeight="480" autorotation="0">
+  <imageScales/>
+  <plugins/>
+  <exports/>
+ </properties>
+ <file source="image.png"/>
+ <file source="Contour.lua"/>
+ <file source="main.lua"/>
+</project>
