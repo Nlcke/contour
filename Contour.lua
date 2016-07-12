@@ -336,14 +336,11 @@ function Contour.shape(contour, size)
 			local p1, p2 = 1, math.max(3, math.ceil(#con / 2))
 			cons[l+1], cons[l] = split(con, p1, p2)
 		else
-			shapes[#shapes+1] = con
+			con.__index = nil
+			for i,point in ipairs(con) do point[3] = nil end
+			shapes[#shapes+1] = Contour.clean(con, 1e-100)
 			cons[#cons] = nil
 		end
-	end
-	
-	for i,shape in ipairs(shapes) do
-		shape.__index = nil
-		for j,point in ipairs(shape) do point[3] = nil end
 	end
 	
 	return shapes
