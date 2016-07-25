@@ -338,7 +338,8 @@ function Contour.shape(contour, size)
 		else
 			con.__index = nil
 			for i,point in ipairs(con) do point[3] = nil end
-			shapes[#shapes+1] = Contour.clean(con, 1e-100)
+			local cleaned = Contour.clean(con, 1e-100)
+			if #cleaned > 2 then shapes[#shapes+1] = cleaned end
 			cons[#cons] = nil
 		end
 	end
